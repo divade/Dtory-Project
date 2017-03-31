@@ -4,6 +4,9 @@ class homepage extends Component {
 
   render() {
     return (
+      <div>
+        <p> test homepage</p>
+      </div>
 
     );
   }
