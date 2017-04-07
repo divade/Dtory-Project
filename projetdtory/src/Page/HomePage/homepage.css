@@ -1,0 +1,84 @@
+.homepage{
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
+/*Header*/
+.headerNavBar.container-fluid{
+  background-color: rgba(0, 90, 148, 0.5);
+  height: 10vh;
+}
+.logo.col-xs-3{
+  height: 10vh;
+  width: 20%;
+}
+.col-xs-7.col-md-8 h1{
+  text-align: center;
+}
+.buttonNavBar{
+  margin-top: 2%;
+
+}
+.header.container {
+  height: 90vh;
+  text-align: center;
+  padding: 20%;
+}
+/*Section 1 & 2*/
+.titleSection{
+  text-align: center;
+  padding-bottom: 2%;
+}
+.imgSection.col-md-4{
+  height: 40px;
+  width:40px;
+}
+.textSection1.col-xs-12.col-md-8, .textSection2.col-xs-12.col-md-8 {
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+  animation-duration: 5s;
+}
+.textSection1.col-xs-12.col-md-8 {
+  animation-name: slideinRight;
+}
+.textSection2{
+    animation-name: slideinLeft;
+}
+.section1.container-fluid{
+  background-color: rgba(158, 158, 158, 0.3);
+  padding-bottom:5%;
+}
+.section2.container-fluid{
+  padding-bottom: 5%;
+  background-color: rgba(0, 97, 158, 0.3);
+}
+/*Footer*/
+.footer.container-fluid{
+  height: 10vh;
+  padding: 2%;
+  text-align: center;
+}
+
+/*animation*/
+
+@keyframes slideinLeft {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideinRight {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%;
+    width: 70%;
+  }
+}
