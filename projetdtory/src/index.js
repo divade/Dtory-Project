@@ -10,8 +10,8 @@ import './index.css';
 ReactDOM.render(
   <Router>
     <div>
-      <Route path='/' component={mainpage} />
-      <Route path="/homepage" component={homepage} />
+      <Route exact path='/' component={mainpage} />
+      <Route path='/homepage' component={homepage} />
     </div>
   </Router>,
   document.getElementById('root')
