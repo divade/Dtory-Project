@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './homepage.css';
+import logo from './../img/logo.svg';
 class homepage extends Component {
 
     render() {
@@ -49,10 +50,6 @@ class homepage extends Component {
       );
     }
   }
-
-    );
-  }
-}
 
 
 export default homepage;
