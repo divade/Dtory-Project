@@ -4,7 +4,7 @@
 }
 /*Header*/
 .headerNavBar.container-fluid{
-  background-color: rgba(0, 90, 148, 0.5);
+  background-color: rgba(0, 90, 148, 0.7);
   height: 10vh;
 }
 .logo.col-xs-3{
@@ -18,30 +18,33 @@
   margin-top: 2%;
 
 }
-.header.container {
+/*Search section*/
+.header.container-fluid {
   height: 90vh;
+  background: url('./../img/vitrier.jpeg') center fixed no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 20%;
 }
+
 /*Section 1 & 2*/
 .titleSection{
   text-align: center;
   padding-bottom: 2%;
 }
 .imgSection.col-md-4{
-  height: 40px;
-  width:40px;
+  height: 30vh;
+  width:30%;
 }
 .textSection1.col-xs-12.col-md-8, .textSection2.col-xs-12.col-md-8 {
   text-align: justify;
   padding-left: 5%;
   padding-right: 5%;
-  animation-duration: 5s;
 }
 .textSection1.col-xs-12.col-md-8 {
-  animation-name: slideinRight;
+  animation: slideinRight 2s;
 }
-.textSection2{
+.textSection2.col-xs-12.col-md-8{
     animation-name: slideinLeft;
 }
 .section1.container-fluid{
@@ -62,23 +65,10 @@
 /*animation*/
 
 @keyframes slideinLeft {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+0% {translateX : -20em;}
+100%{translateX: 0em;}
 }
-
+/*
 @keyframes slideinRight {
-  from {
-    margin-right: 100%;
-    width: 300%;
-  }
-  to {
-    margin-right: 0%;
-    width: 70%;
-  }
-}
+
+}*/
